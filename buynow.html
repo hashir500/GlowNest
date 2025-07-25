@@ -1,0 +1,380 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>GlowNest</title>
+    <style>
+      /* Hide scrollbar for all elements */
+      * {
+        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      *::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+      /* Ensure html and body don't show scrollbars */
+      html, body {
+        overflow: -moz-scrollbars-none;  /* Old Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      /* Hide scrollbar for WebKit browsers */
+      body::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="no-scrollbar">
+    <div class="relative flex size-full min-h-screen flex-col bg-[#1a1a1a] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- Mobile Navigation Toggle -->
+        <header class="relative border-b border-solid border-b-[#363636] px-4 py-3 sm:px-6 lg:px-10">
+          <div class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-white no-underline sm:gap-4">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">GlowNest</h2>
+            </a>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="text-white sm:hidden focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden sm:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-4 lg:gap-9">
+                <a class="text-sm font-medium leading-normal text-white hover:underline" href="features.html">Features</a>
+                <a class="text-sm font-medium leading-normal text-white hover:underline" href="demo.html">Demo</a>
+                <a class="text-sm font-medium leading-normal text-white hover:underline" href="colors.html">Colors</a>
+                <a class="text-sm font-medium leading-normal text-white hover:underline" href="reviews.html">Reviews</a>
+              </div>
+              <div class="ml-4 flex items-center">
+                <a href="buynow.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-black px-4 py-2 text-sm font-bold leading-normal tracking-[0.015em] text-white no-underline transition duration-300 hover:bg-gray-800 sm:h-10">
+                  <span class="truncate">Buy Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden sm:hidden">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+              <a href="features.html" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-800">Features</a>
+              <a href="demo.html" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-800">Demo</a>
+              <a href="colors.html" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-800">Colors</a>
+              <a href="reviews.html" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-800">Reviews</a>
+              <a href="buynow.html" class="mt-2 block w-full rounded-md bg-gray-800 px-3 py-2 text-center text-base font-medium text-white hover:bg-gray-700">
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </header>
+        <div class="flex flex-1 justify-center px-4 py-5 sm:px-6 lg:px-10 xl:px-40">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap gap-2 p-4 text-sm sm:text-base">
+              <a class="text-[#adadad] font-medium leading-normal hover:underline" href="index.html">Home</a>
+              <span class="text-[#adadad] font-medium leading-normal">/</span>
+              <span class="text-white font-medium leading-normal">GlowNest</span>
+            </div>
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-white tracking-light text-[32px] font-bold leading-tight">GlowNest Smart Ambient Light</p>
+                <p class="text-[#adadad] text-sm font-normal leading-normal">Elevate your space with intelligent lighting</p>
+              </div>
+            </div>
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+              <div class="max-w-4xl mx-auto">
+                <div class="relative group">
+                  <div class="absolute inset-0 bg-gradient-to-br from-gray-900/10 to-gray-900/30 rounded-2xl -inset-0.5 blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
+                  <div class="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 h-[320px] md:h-[400px] flex items-center justify-center overflow-hidden">
+                    <div 
+                      id="product-image"
+                      class="w-full h-full bg-center bg-no-repeat transition-all duration-500 transform group-hover:scale-105 rounded-xl overflow-hidden"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0SX17Btur83c4c_0uGN_geIE4ktiZ5yuFHycGCLYO9f-toiU17BBni0MaoLrYbgSNFH70sQ9YPTlVnaNoQs4z2HB_0jjsbbaVnakrb_30_inKEXsWo9jpg74X304wODFkWgZVM2BTeVwEt-ucIy5aECWgt882aUEkTmqcx_xWDVJm4EhCmDP039Sqyi4CXE7VmqUTk3RBT5smsOTFUcOIyoSxitplvmnh1KdijJLHj8xD_kZM25T0UTJIvEJDaBmiFKZsvEIdA_E"); background-size: contain; background-position: center; background-repeat: no-repeat;'
+                    ></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                      <div class="text-white text-sm bg-black/60 backdrop-blur-sm px-3 py-2 rounded-lg">
+                        Click on different finishes to see the product
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Finish</h3>
+            <div class="flex flex-wrap gap-3 p-4">
+              <label
+                class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#4d4d4d] px-4 h-11 text-white has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-black relative cursor-pointer finish-option"
+                data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuD0SX17Btur83c4c_0uGN_geIE4ktiZ5yuFHycGCLYO9f-toiU17BBni0MaoLrYbgSNFH70sQ9YPTlVnaNoQs4z2HB_0jjsbbaVnakrb_30_inKEXsWo9jpg74X304wODFkWgZVM2BTeVwEt-ucIy5aECWgt882aUEkTmqcx_xWDVJm4EhCmDP039Sqyi4CXE7VmqUTk3RBT5smsOTFUcOIyoSxitplvmnh1KdijJLHj8xD_kZM25T0UTJIvEJDaBmiFKZsvEIdA_E"
+              >
+                Matte Black
+                <input type="radio" class="invisible absolute" name="finish-option" value="matte-black" />
+              </label>
+              <label
+                class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#4d4d4d] px-4 h-11 text-white has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-black relative cursor-pointer finish-option"
+                data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuA2RFr8xHTqyOxokZ-ihzM4Lry6NHrp5O6Hx2q9PuyLSyFFvBpwhiDcfZYOgP9LDKscdECL8mBA2K2LfK8vwNM2crnxvErRvzLYX9PKMj39T2gxdeputpfwS_yzLDzCkXVwRafP4XSkUpzFNM_c-pS2-p2l9jCFYjVGXMkrAeWEDAgXCBSaLjHV4kYP45wDDH5KTUMiWWsZRBghbbG4rHhoQ8xY5YdBEjZpKMhUFz8UykfujxuLWed3e7TBgTa4CoaDAlMDVo7m1yc"
+              >
+              Glossy White
+                <input type="radio" class="invisible absolute" name="finish-option" value="frosted-white" />
+              </label>
+              <label
+                class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#4d4d4d] px-4 h-11 text-white has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-black relative cursor-pointer finish-option"
+                data-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDi7lJ1FYsDa-e0L3ffLjl6PUuSCoX1_7Xf_zNFqmt-ghlugomn-jlPPUYhIXXcIAr0kE5WlwXxHeMXudgT62EbX3QRcy4T4yr-jf5TaulBGEeWhvsu8Jfv58X1Aqr02A9yeWSTLoXA8OQnUMzkUKJ_V6P2-8q_AffKMLKAnLLABSSxV-ffKFYXGccbAe_foY-ZQFxyqbBp56ODINDRvZl-PhtPfNDbhZN1erGcaIYCF90PsZ8Lds4jkMcd9HZzu2otXVnIXZVNzIY"
+              >
+                
+                Brushed Silver
+                <input type="radio" class="invisible absolute" name="finish-option" value="natural-wood" />
+              </label>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Quantity</h3>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#4d4d4d] bg-neutral-800 focus:border-[#4d4d4d] h-14 placeholder:text-[#adadad] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-black text-white text-base font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Add to Cart</span>
+              </button>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Key Features</h3>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Adaptive Lighting: Automatically adjusts brightness and color temperature to match your environment. Music Sync: Lights pulse and change color in sync with your
+              music. Touch/App Control: Easily control your lights with touch or the GlowNest app.
+            </p>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Detailed Features</h2>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-white tracking-light text-2xl font-bold leading-tight sm:text-3xl md:text-4xl md:font-black md:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Explore the GlowNest Features
+                </h1>
+                <p class="text-white text-base font-normal leading-normal max-w-[720px]">Discover how GlowNest enhances your environment with intelligent lighting.</p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf2MZlZ_x78JaoqYYpxZn9-ZOtZKbjbRGe_Hm91BVskS2-ztwhVKV11DnbNob6KxuD8QmgYzCQ7GBgCWTwvoGrviGzl4rEZLnwHaD8qrcKHSmVCnQp77O5VZBqCmdCJa-B6mTSNCnFDU2NmgQHCezyapEJxDydm-hmlLCjA7n3GjmztXljIQ_8-1CXPUFZFpIM5EdQWw9Mm0gN5cnh1v2omTybXHL5rSMW2OMtMXkv5X26Y1g1oLBsZ8ZF0eOtaf5pbdULjtUaHgk");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Adaptive Lighting</p>
+                    <p class="text-[#adadad] text-sm font-normal leading-normal">Automatically adjusts brightness and color temperature to match your environment.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBzbYXNRvPn3w-mW47qvvFUAipxCpNwGaKsKh9KIIPR1Ry2p-IiBw2wtFoPbUwrakbbmV5Hd7ZfimUpQlKoGFPR2E_SonrMAML7iJ-jwaDipkAEe0Oy5urS8XVllRymvLwenm4Uup-cKftsxnVgpAUMsBwUmFIowT7XyWTNF1Fz44PGOkS6ibZZqcYPYtYlDxtr7PoZiMUR_iglsYyQrRGJYpakF4iGlCT82J57bAjLLSX357vAqHoTpuLqdTvBhRGp-zCH5QQxftc");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Music Sync</p>
+                    <p class="text-[#adadad] text-sm font-normal leading-normal">Lights pulse and change color in sync with your music.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiY123oNqNFfol-1DMfgpMO4w5CmMRMq13X4cT4qXnOsKblPg_VN90rpNGqHWCg-cAlpsai9pUaRb4z2FsnsaEfPh1f7_bofLqWtZXfP92TBQy52ZJfWyMdeZnP114C3zANCYT2ajRATKsC22fzBHL_5YfWGq8ZAJEdsqU1HctnTfKHPmrLyAosxVS4QM2Wfu-0aJxnGWxIkGIKn2ErfvnuAaDg3quqiD2u8CU9Si_5v_G1rQPIZ6eXhg1_t-oEyfpy0rjRhyT0qE");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Touch/App Control</p>
+                    <p class="text-[#adadad] text-sm font-normal leading-normal">Easily control your lights with touch or the GlowNest app.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Warranty Information</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              GlowNest comes with a 2-year warranty covering manufacturing defects. Please refer to our support page for more details.
+            </p>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Frequently Asked Questions</h2>
+            <div class="flex flex-col p-4 gap-3">
+              <details class="flex flex-col rounded-lg border border-[#4d4d4d] bg-[#1a1a1a] px-[15px] py-[7px] group" open="">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-white text-sm font-medium leading-normal">How does adaptive lighting work?</p>
+                  <div class="text-white group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#adadad] text-sm font-normal leading-normal pb-2">
+                  GlowNest uses advanced sensors to detect the ambient light in your room and adjusts its brightness and color temperature accordingly, providing optimal lighting
+                  at all times.
+                </p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#4d4d4d] bg-[#1a1a1a] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-white text-sm font-medium leading-normal">Can I control multiple GlowNest lights?</p>
+                  <div class="text-white group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#adadad] text-sm font-normal leading-normal pb-2">
+                  GlowNest uses advanced sensors to detect the ambient light in your room and adjusts its brightness and color temperature accordingly, providing optimal lighting
+                  at all times.
+                </p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#4d4d4d] bg-[#1a1a1a] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-white text-sm font-medium leading-normal">Is the app available for both iOS and Android?</p>
+                  <div class="text-white group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#adadad] text-sm font-normal leading-normal pb-2">
+                  GlowNest uses advanced sensors to detect the ambient light in your room and adjusts its brightness and color temperature accordingly, providing optimal lighting
+                  at all times.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#adadad] text-base font-normal leading-normal min-w-40" href="#">About Us</a>
+                <a class="text-[#adadad] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                <a class="text-[#adadad] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#adadad] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#adadad]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#adadad]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#adadad]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#adadad] text-base font-normal leading-normal">@2024 GlowNest. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+    </body>
+    <script>
+      // Mobile menu toggle functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+          });
+          
+          // Close menu when clicking outside
+          document.addEventListener('click', function(event) {
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+              mobileMenu.classList.add('hidden');
+              mobileMenuButton.setAttribute('aria-expanded', 'false');
+            }
+          });
+        }
+        
+        // Close menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+          });
+        });
+      });
+
+      // Image switching functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const finishOptions = document.querySelectorAll('.finish-option');
+        const productImage = document.getElementById('product-image');
+        
+        finishOptions.forEach(option => {
+          option.addEventListener('click', function() {
+            // Update the active state
+            finishOptions.forEach(opt => {
+              opt.classList.remove('border-black', 'border-[3px]', 'px-3.5');
+              opt.classList.add('border-[#4d4d4d]', 'px-4');
+            });
+            
+            this.classList.remove('border-[#4d4d4d]', 'px-4');
+            this.classList.add('border-black', 'border-[3px]', 'px-3.5');
+            
+            // Get the image URL from data attribute
+            const newImageUrl = this.getAttribute('data-image');
+            
+            // Fade out current image
+            if (productImage) {
+              productImage.style.opacity = '0';
+              
+              // After fade out, change the image and fade back in
+              setTimeout(() => {
+                productImage.style.backgroundImage = `url("${newImageUrl}")`;
+                setTimeout(() => {
+                  productImage.style.opacity = '1';
+                }, 50);
+              }, 300);
+            }
+          });
+        });
+      });
+    </script>
+</html>
